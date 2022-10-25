@@ -44,9 +44,8 @@ return require('packer').startup(function(use)
         -- tag = 'release' -- To use the latest release (do not use this if you run Neovim nightly or dev builds!)
     }
 
-    use "arzg/vim-colors-xcode"
+    use {'shaunsingh/oxocarbon.nvim', run = './install.sh'}
 
-    use "tpope/vim-fugitive"
     use "tpope/vim-commentary"
 
     use {

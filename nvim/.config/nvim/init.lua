@@ -12,15 +12,17 @@ vim.o.shiftwidth = 4
 vim.o.smartindent = true
 vim.o.list = true
 
-
-vim.cmd("colorscheme xcodedark")
+-- Appearance
+vim.cmd("colorscheme oxocarbon")
 vim.cmd("set cc=99")
 vim.cmd("hi ColorColumn ctermbg=grey guibg=#333333")
+
+-- Clipboard
+vim.cmd("set clipboard=unnamedplus")
 
 -- Plugins and plugin configuration
 require("plugins")
 
---vim.cmd[[silent! colorscheme tokyonight]]
 
 -- TODO: move this to anew file like after/jupyter-ascending.lua
 -- nmap <space><space>x <Plug>JupyterExecute

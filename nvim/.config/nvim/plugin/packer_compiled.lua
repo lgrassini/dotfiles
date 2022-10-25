@@ -144,6 +144,11 @@ _G.packer_plugins = {
     path = "/Users/lisandro/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["oxocarbon.nvim"] = {
+    loaded = true,
+    path = "/Users/lisandro/.local/share/nvim/site/pack/packer/start/oxocarbon.nvim",
+    url = "https://github.com/shaunsingh/oxocarbon.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/lisandro/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -159,20 +164,10 @@ _G.packer_plugins = {
     path = "/Users/lisandro/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["vim-colors-xcode"] = {
-    loaded = true,
-    path = "/Users/lisandro/.local/share/nvim/site/pack/packer/start/vim-colors-xcode",
-    url = "https://github.com/arzg/vim-colors-xcode"
-  },
   ["vim-commentary"] = {
     loaded = true,
     path = "/Users/lisandro/.local/share/nvim/site/pack/packer/start/vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
-  },
-  ["vim-fugitive"] = {
-    loaded = true,
-    path = "/Users/lisandro/.local/share/nvim/site/pack/packer/start/vim-fugitive",
-    url = "https://github.com/tpope/vim-fugitive"
   }
 }
 
