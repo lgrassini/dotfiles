@@ -46,7 +46,12 @@ return require('packer').startup(function(use)
 
     use {'shaunsingh/oxocarbon.nvim', run = './install.sh'}
 
-    use "tpope/vim-commentary"
+    use {
+        'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
+    }
 
     use {
       "nvim-neo-tree/neo-tree.nvim",
