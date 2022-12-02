@@ -4,14 +4,21 @@
 vim.g.mapleader = " "
 
 -- Options
-vim.o.number = true
-vim.o.relativenumber = true
-vim.o.expandtab = true
-vim.o.tabstop = 4
-vim.o.softtabstop = 4
-vim.o.shiftwidth = 4
-vim.o.smartindent = true
-vim.o.list = true
+local options = vim.o
+
+options.number = true
+options.relativenumber = true
+
+-- Tab & indent
+options.expandtab = true
+options.tabstop = 4
+options.softtabstop = 4
+options.shiftwidth = 4
+options.smartindent = true
+options.list = true
+
+options.ignorecase = true
+options.scrolloff = 4
 
 -- Appearance
 vim.cmd("colorscheme oxocarbon")
