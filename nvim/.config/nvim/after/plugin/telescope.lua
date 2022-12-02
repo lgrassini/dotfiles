@@ -1,5 +1,6 @@
 require('telescope').setup{
   defaults = {
+    file_ignore_patterns = { "./.git/", "node_modules/", "vendor/" },
     -- Default configuration for telescope goes here:
     -- config_key = value,
     mappings = {
