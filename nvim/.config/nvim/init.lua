@@ -3,6 +3,9 @@
 -- Globals
 vim.g.mapleader = " "
 
+-- Plugins and plugin configuration
+require("plugins")
+
 -- Options
 local options = vim.o
 
@@ -27,9 +30,6 @@ vim.cmd("hi ColorColumn ctermbg=grey guibg=#333333")
 
 -- Clipboard
 vim.cmd("set clipboard=unnamedplus")
-
--- Plugins and plugin configuration
-require("plugins")
 
 -- press <Tab> to expand or jump in a snippet. These can also be mapped separately
 -- via <Plug>luasnip-expand-snippet and <Plug>luasnip-jump-next.

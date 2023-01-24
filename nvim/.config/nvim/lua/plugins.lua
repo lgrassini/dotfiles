@@ -1,3 +1,11 @@
+if require("packer_install")() then
+	return
+end
+
+vim.cmd.packadd("packer.nvim")
+vim.cmd([[autocmd BufWritePost plugins.lua source <afile> | PackerCompile]])
+
+
 vim.cmd([[
   augroup packer_user_config
     autocmd!
