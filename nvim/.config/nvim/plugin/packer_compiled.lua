@@ -157,13 +157,8 @@ _G.packer_plugins = {
   },
   ["oxocarbon.nvim"] = {
     loaded = true,
-<<<<<<< HEAD
-    path = "/Users/work/.local/share/nvim/site/pack/packer/start/oxocarbon.nvim",
-    url = "https://github.com/shaunsingh/oxocarbon.nvim"
-=======
     path = "/Users/lisandro/.local/share/nvim/site/pack/packer/start/oxocarbon.nvim",
     url = "https://github.com/nyoom-engineering/oxocarbon.nvim"
->>>>>>> 9f74b06 (Merged.)
   },
   ["packer.nvim"] = {
     loaded = true,
