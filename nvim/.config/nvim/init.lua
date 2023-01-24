@@ -24,6 +24,7 @@ options.ignorecase = true
 options.scrolloff = 4
 
 -- Appearance
+options.background = "dark" -- set this to dark or light
 vim.cmd("colorscheme oxocarbon")
 vim.cmd("set cc=99")
 vim.cmd("hi ColorColumn ctermbg=grey guibg=#333333")

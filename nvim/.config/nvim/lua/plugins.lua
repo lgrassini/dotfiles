@@ -35,7 +35,8 @@ return require('packer').startup(function(use)
         "neovim/nvim-lspconfig",
     }
 
-    use({"L3MON4D3/LuaSnip", tag = "v<CurrentMajor>.*"})
+    --use({"L3MON4D3/LuaSnip", tag = "v<CurrentMajor>.*"})
+    use "L3MON4D3/LuaSnip"
 
     use "rafamadriz/friendly-snippets"
 
@@ -56,7 +57,7 @@ return require('packer').startup(function(use)
         -- tag = 'release' -- To use the latest release (do not use this if you run Neovim nightly or dev builds!)
     }
 
-    use {'shaunsingh/oxocarbon.nvim', run = './install.sh'}
+    use {'nyoom-engineering/oxocarbon.nvim'}
 
     use {
         'numToStr/Comment.nvim',
