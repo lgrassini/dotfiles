@@ -157,7 +157,7 @@ _G.packer_plugins = {
   },
   ["oxocarbon.nvim"] = {
     loaded = true,
-    path = "/Users/lisandro/.local/share/nvim/site/pack/packer/start/oxocarbon.nvim",
+    path = "/Users/work/.local/share/nvim/site/pack/packer/start/oxocarbon.nvim",
     url = "https://github.com/nyoom-engineering/oxocarbon.nvim"
   },
   ["packer.nvim"] = {
