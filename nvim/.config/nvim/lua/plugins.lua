@@ -66,15 +66,7 @@ return require('packer').startup(function(use)
         end
     }
 
-    use {
-      "nvim-neo-tree/neo-tree.nvim",
-        branch = "v2.x",
-        requires = {
-          "nvim-lua/plenary.nvim",
-          "MunifTanjim/nui.nvim",
-        }
-      }
-
+    use 'm4xshen/autoclose.nvim'
 
     -- Python
     use { "untitled-ai/jupyter_ascending.vim" }

@@ -39,3 +39,4 @@ vim.keymap.set('n', '<leader>b', require"telescope.builtin".buffers, {remap = fa
 vim.keymap.set('n', '<leader>f', require"telescope.builtin".live_grep, {remap = false})
 vim.keymap.set('n', '<leader>t', require"telescope.builtin".treesitter, {remap = false})
 vim.keymap.set('n', '<leader>gs', require"telescope.builtin".git_status, {remap = false})
+vim.keymap.set('n', '<leader>d', require"telescope.builtin".diagnostics, {remap = false})

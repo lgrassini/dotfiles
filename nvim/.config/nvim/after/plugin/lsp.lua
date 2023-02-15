@@ -43,6 +43,7 @@ local lsp_flags = {
 }
 
 local lspconfig = require("lspconfig")
+local util = require 'lspconfig.util'
 
 lspconfig.intelephense.setup {
     on_attach = on_attach,
@@ -51,29 +52,48 @@ lspconfig.intelephense.setup {
     cmd = { "intelephense", "--stdio" }
 }
 
-lspconfig.sumneko_lua.setup {
+-- lspconfig.sumneko_lua.setup {
+--
+--     on_attach = on_attach,
+--     flags = lsp_flags,
+--
+--   settings = {
+--     Lua = {
+--       runtime = {
+--         -- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
+--         version = 'LuaJIT',
+--       },
+--       diagnostics = {
+--         -- Get the language server to recognize the `vim` global
+--         globals = {'vim'},
+--       },
+--       workspace = {
+--         -- Make the server aware of Neovim runtime files
+--         library = vim.api.nvim_get_runtime_file("", true),
+--       },
+--       -- Do not send telemetry data containing a randomized but unique identifier
+--       telemetry = {
+--         enable = false,
+--       },
+--     },
+--   },
+-- }
 
-    on_attach = on_attach,
-    flags = lsp_flags,
-
-  settings = {
-    Lua = {
-      runtime = {
-        -- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
-        version = 'LuaJIT',
-      },
-      diagnostics = {
-        -- Get the language server to recognize the `vim` global
-        globals = {'vim'},
-      },
-      workspace = {
-        -- Make the server aware of Neovim runtime files
-        library = vim.api.nvim_get_runtime_file("", true),
-      },
-      -- Do not send telemetry data containing a randomized but unique identifier
-      telemetry = {
-        enable = false,
-      },
-    },
+lspconfig.ccls.setup {
+  init_options = {
+    compilationDatabaseDirectory = "build";
+    index = {
+      threads = 0;
+    };
+    clang = {
+      excludeArgs = { "-frounding-math"} ;
+    };
   },
+  cmd = { "ccls" },
+  filetypes = { "c", "cpp", "objc", "objcpp" },
+  offset_encoding = "utf-32",
+  root_fir = util.root_pattern('compile_commands.json', '.ccls', '.git'),
+  single_file_support = false
 }
+
+
